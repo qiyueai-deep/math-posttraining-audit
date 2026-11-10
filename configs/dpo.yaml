@@ -1,0 +1,14 @@
+# DPO。ref_model 由 src/model/train_dpo.py 显式加载冻结的 SFT adapter,
+# 绝不使用 ref_model=None (那会把 KL 锚到未训练的 base)。
+base_model: "D:/models/Qwen3-0.6B"
+sft_adapter: runs/sft
+train_file: data/preferences_deconfounded.jsonl
+output_dir: runs/dpo_deconfounded
+seed: 20251109
+num_train_epochs: 1
+learning_rate: 0.00001
+beta: 0.1
+max_length: 512
+max_prompt_length: 256
+per_device_train_batch_size: 1
+gradient_accumulation_steps: 8

@@ -1,0 +1,46 @@
+{
+  "shortcut": {
+    "rows": 756,
+    "true_math_error_rate": 0.0,
+    "length_diff_min": 16,
+    "length_diff_max": 45,
+    "length_diff_mean": 27.746031746031747,
+    "length_diff_sign_counts": {
+      "chosen_longer": 756
+    },
+    "format_match_rate": 0.3333333333333333,
+    "label_claim_counts": {
+      "wrong_final_answer": 252,
+      "correct_final_incomplete_reasoning": 252,
+      "refusal": 252
+    }
+  },
+  "deconfounded": {
+    "rows": 249,
+    "true_math_error_rate": 1.0,
+    "length_diff_min": 0,
+    "length_diff_max": 0,
+    "length_diff_mean": 0.0,
+    "length_diff_sign_counts": {
+      "equal": 249
+    },
+    "format_match_rate": 1.0,
+    "label_claim_counts": {
+      "wrong_final_answer": 249
+    }
+  },
+  "length_reversed": {
+    "rows": 249,
+    "true_math_error_rate": 1.0,
+    "length_diff_min": -22,
+    "length_diff_max": -22,
+    "length_diff_mean": -22.0,
+    "length_diff_sign_counts": {
+      "rejected_longer": 249
+    },
+    "format_match_rate": 1.0,
+    "label_claim_counts": {
+      "wrong_final_answer": 249
+    }
+  }
+}
