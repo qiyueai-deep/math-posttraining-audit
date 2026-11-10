@@ -1,0 +1,48 @@
+{
+  "round1": {
+    "ok": true,
+    "n_files_compiled": 34,
+    "tests_run": 44,
+    "failures": [],
+    "unittest_log": "----------------------------------------------------------------------\nRan 44 tests in 3.843s\n\nOK\n"
+  },
+  "round2": {
+    "ok": true,
+    "n_records": 245,
+    "n_pending": 9,
+    "dataset_sha256": "c5bb982652077f9717952d1b234061b7683ef55b4d46e2c88095b5dd32bbc1cc",
+    "consistency": {
+      "ok": true,
+      "report_mismatches": [],
+      "measured_with_null_value": [],
+      "n_records": 245,
+      "n_pending": 9
+    },
+    "failures": []
+  },
+  "round3": {
+    "ok": true,
+    "checks": {
+      "P1_data": true,
+      "P2_verifier": true,
+      "P3_prompt_mask": true,
+      "P4_preferences": true,
+      "P5_beta": true,
+      "P6_explicit_ref": true,
+      "P7_no_truncation_bug": true,
+      "P8_single_source": true,
+      "P9_pycharm": true,
+      "P10_docs": true,
+      "P11_algo_lab": true,
+      "P13_model_pilot": true,
+      "P12_tech_report": true,
+      "C1_identifiability": true,
+      "C2_cluster_inference": true,
+      "C3_verifier_bias": true,
+      "A1_algorithm_lab": true,
+      "original_project_untouched": true
+    },
+    "failures": []
+  },
+  "ok": true
+}
