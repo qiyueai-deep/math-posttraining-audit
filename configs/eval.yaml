@@ -1,0 +1,11 @@
+# 生成式评测协议。max_new_tokens 不得小于 256,
+# 旧项目用 64 造成的解码截断被误判为数学错误, 这是已修复的缺陷。
+base_model: "D:/models/Qwen3-0.6B"
+test_file: data/test.jsonl
+max_new_tokens: 256
+enable_thinking: false
+do_sample: false
+verifier: strict_poly
+cluster_unit: family
+cluster_bootstrap_B: 10000
+seed: 20251109

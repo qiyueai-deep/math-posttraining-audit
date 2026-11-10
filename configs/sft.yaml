@@ -1,0 +1,15 @@
+# LoRA-SFT。assistant-only loss 由 src/model/train_sft.py 强制实现, 无开关。
+model_name: "D:/models/Qwen3-0.6B"
+train_file: data/train.jsonl
+valid_file: data/valid.jsonl
+output_dir: runs/sft
+seed: 20251109
+max_seq_length: 512
+num_train_epochs: 2
+learning_rate: 0.0002
+lora_r: 8
+lora_alpha: 16
+lora_dropout: 0.05
+per_device_train_batch_size: 2
+gradient_accumulation_steps: 4
+target_modules: [q_proj, k_proj, v_proj, o_proj]
