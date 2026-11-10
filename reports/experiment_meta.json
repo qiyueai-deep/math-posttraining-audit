@@ -1,0 +1,13 @@
+{
+  "seed": 20251109,
+  "dataset": "data",
+  "n_rows": 600,
+  "n_families": 12,
+  "dataset_sha256": "c5bb982652077f9717952d1b234061b7683ef55b4d46e2c88095b5dd32bbc1cc",
+  "leakage_ok": true,
+  "legacy_root": "C:\\Users\\24399\\Desktop\\math-posttraining-project",
+  "bootstrap_B": 10000,
+  "bias_B": 2000,
+  "n_research_records": 194,
+  "n_pilot_records": 51
+}
