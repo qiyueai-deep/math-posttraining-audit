@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 320" width="720" height="320">
+<rect width="720" height="320" fill="#ffffff"/>
+<text x="48" y="26" font-size="15" fill="#111827" font-family="sans-serif">shortcut 偏好组：reward margin 上升，长度偏置劫持率同时上升</text>
+<line x1="48" y1="272" x2="672" y2="272" stroke="#9ca3af"/>
+<line x1="48" y1="48" x2="48" y2="272" stroke="#9ca3af"/>
+<path d="M48.0,271.2 L89.7,255.5 L131.5,240.0 L173.2,224.5 L215.0,209.2 L256.7,194.0 L298.4,178.8 L340.2,163.8 L381.9,148.9 L423.7,134.1 L465.4,119.4 L507.1,104.8 L548.9,90.2 L590.6,75.8 L632.3,61.5 L672.0,48.0" fill="none" stroke="#dc2626" stroke-width="2.5"/>
+<path d="M48.0,178.4 L89.7,173.0 L131.5,167.7 L173.2,162.4 L215.0,157.3 L256.7,152.2 L298.4,147.3 L340.2,142.5 L381.9,137.8 L423.7,133.3 L465.4,128.9 L507.1,124.7 L548.9,120.7 L590.6,116.8 L632.3,113.1 L672.0,109.8" fill="none" stroke="#2563eb" stroke-width="2.5"/>
+<text x="492" y="64" font-size="12" fill="#dc2626">reward margin</text>
+<text x="492" y="82" font-size="12" fill="#2563eb">hack rate</text>
+<text x="48" y="304" font-size="12" fill="#374151">step 0</text>
+<text x="628" y="304" font-size="12" fill="#374151">step 299</text>
+<text x="48" y="300" font-size="11" fill="#6b7280">数据来源 reports/algo_lab_curves.json，由 src/model/algo_lab.py 真实训练产生</text>
+</svg>

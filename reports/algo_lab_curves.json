@@ -1,0 +1,517 @@
+{
+  "note": "analytic 7-dim log-linear policy on CPU; mechanism validation, NOT Qwen3/LoRA weights; model_stage metrics remain pending",
+  "curves": {
+    "deconfounded": [
+      {
+        "step": 0,
+        "loss": 0.6929472005599453,
+        "reward_margin": 0.00040000000000000034,
+        "reward_accuracy": 1.0,
+        "probe_accuracy": 0.8404700014588958,
+        "probe_hack_rate": 0.4159127741187804,
+        "theta_length": 0.24699331930945848,
+        "theta_quality": 1.661729277739658
+      },
+      {
+        "step": 20,
+        "loss": 0.6889643546803327,
+        "reward_margin": 0.00838322130765039,
+        "reward_accuracy": 1.0,
+        "probe_accuracy": 0.8508852952287779,
+        "probe_hack_rate": 0.397108777509492,
+        "theta_length": 0.24699331930945848,
+        "theta_quality": 1.7415614908161619
+      },
+      {
+        "step": 40,
+        "loss": 0.6850132469922439,
+        "reward_margin": 0.016334570945829442,
+        "reward_accuracy": 1.0,
+        "probe_accuracy": 0.8606950669852872,
+        "probe_hack_rate": 0.37868113551809557,
+        "theta_length": 0.24699331930945848,
+        "theta_quality": 1.8210749871979524
+      },
+      {
+        "step": 60,
+        "loss": 0.6810936230558866,
+        "reward_margin": 0.024254177687332117,
+        "reward_accuracy": 1.0,
+        "probe_accuracy": 0.869922200592687,
+        "probe_hack_rate": 0.36067151904304173,
+        "theta_length": 0.24699331930945848,
+        "theta_quality": 1.900271054612979
+      },
+      {
+        "step": 80,
+        "loss": 0.6772052295119064,
+        "reward_margin": 0.032142170764126426,
+        "reward_accuracy": 1.0,
+        "probe_accuracy": 0.8785906275576434,
+        "probe_hack_rate": 0.3431168631431079,
+        "theta_length": 0.24699331930945848,
+        "theta_quality": 1.9791509853809222
+      },
+      {
+        "step": 100,
+        "loss": 0.673347814107581,
+        "reward_margin": 0.03999867984169535,
+        "reward_accuracy": 1.0,
+        "probe_accuracy": 0.8867249664811568,
+        "probe_hack_rate": 0.32604924095928656,
+        "theta_length": 0.24699331930945848,
+        "theta_quality": 2.0577160761566113
+      },
+      {
+        "step": 120,
+        "loss": 0.6695211257220576,
+        "reward_margin": 0.04782383499377037,
+        "reward_accuracy": 1.0,
+        "probe_accuracy": 0.8943502054452648,
+        "probe_hack_rate": 0.3094958288624557,
+        "theta_length": 0.24699331930945848,
+        "theta_quality": 2.1359676276773616
+      },
+      {
+        "step": 140,
+        "loss": 0.6657249143906434,
+        "reward_margin": 0.05561776667745709,
+        "reward_accuracy": 1.0,
+        "probe_accuracy": 0.9014914262492258,
+        "probe_hack_rate": 0.2934789551154713,
+        "theta_length": 0.24699331930945848,
+        "theta_quality": 2.2139069445142288
+      },
+      {
+        "step": 160,
+        "loss": 0.6619589313281653,
+        "reward_margin": 0.063380605708754,
+        "reward_accuracy": 1.0,
+        "probe_accuracy": 0.9081735685649327,
+        "probe_hack_rate": 0.27801622265393444,
+        "theta_length": 0.24699331930945848,
+        "theta_quality": 2.291535334827198
+      },
+      {
+        "step": 180,
+        "loss": 0.6582229289514124,
+        "reward_margin": 0.07111248323846546,
+        "reward_accuracy": 1.0,
+        "probe_accuracy": 0.9144212314767797,
+        "probe_hack_rate": 0.26312069547949096,
+        "theta_length": 0.24699331930945848,
+        "theta_quality": 2.3688541101243126
+      },
+      {
+        "step": 200,
+        "loss": 0.6545166609006756,
+        "reward_margin": 0.07881353072850915,
+        "reward_accuracy": 1.0,
+        "probe_accuracy": 0.9202585094737393,
+        "probe_hack_rate": 0.2488011375932144,
+        "theta_length": 0.24699331930945848,
+        "theta_quality": 2.4458645850247493
+      },
+      {
+        "step": 220,
+        "loss": 0.6508398820604006,
+        "reward_margin": 0.08648387992861867,
+        "reward_accuracy": 1.0,
+        "probe_accuracy": 0.9257088597371281,
+        "probe_hack_rate": 0.23506229331836118,
+        "theta_length": 0.24699331930945848,
+        "theta_quality": 2.5225680770258445
+      },
+      {
+        "step": 240,
+        "loss": 0.6471923485789655,
+        "reward_margin": 0.09412366285344034,
+        "reward_accuracy": 1.0,
+        "probe_accuracy": 0.9307949974834278,
+        "probe_hack_rate": 0.22190519819796786,
+        "theta_length": 0.24699331930945848,
+        "theta_quality": 2.5989659062740613
+      },
+      {
+        "step": 260,
+        "loss": 0.6435738178876028,
+        "reward_margin": 0.10173301176002544,
+        "reward_accuracy": 1.0,
+        "probe_accuracy": 0.9355388161468563,
+        "probe_hack_rate": 0.2093275103200928,
+        "theta_length": 0.24699331930945848,
+        "theta_quality": 2.6750593953399124
+      },
+      {
+        "step": 280,
+        "loss": 0.6399840487184766,
+        "reward_margin": 0.10931205912571536,
+        "reward_accuracy": 1.0,
+        "probe_accuracy": 0.9399613292944622,
+        "probe_hack_rate": 0.19732385283620327,
+        "theta_length": 0.24699331930945848,
+        "theta_quality": 2.7508498689968115
+      },
+      {
+        "step": 299,
+        "loss": 0.6366001898034761,
+        "reward_margin": 0.11648420816167657,
+        "reward_accuracy": 1.0,
+        "probe_accuracy": 0.9438834204839149,
+        "probe_hack_rate": 0.18644475458729928,
+        "theta_length": 0.24699331930945848,
+        "theta_quality": 2.8225713593564237
+      }
+    ],
+    "shortcut": [
+      {
+        "step": 0,
+        "loss": 0.6928496036116315,
+        "reward_margin": 0.0005952574029282546,
+        "reward_accuracy": 1.0,
+        "probe_accuracy": 0.8401121296103372,
+        "probe_hack_rate": 0.41805902269557016,
+        "theta_length": 0.24810316057929974,
+        "theta_quality": 1.6590626110729914
+      },
+      {
+        "step": 20,
+        "loss": 0.6869413297924466,
+        "reward_margin": 0.01245702940353703,
+        "reward_accuracy": 1.0,
+        "probe_accuracy": 0.843646208806053,
+        "probe_hack_rate": 0.44195639039778273,
+        "theta_length": 0.2702279934799806,
+        "theta_quality": 1.6856118911024265
+      },
+      {
+        "step": 40,
+        "loss": 0.6811146772810852,
+        "reward_margin": 0.02423657950548477,
+        "reward_accuracy": 1.0,
+        "probe_accuracy": 0.8470875708009623,
+        "probe_hack_rate": 0.46568562314238365,
+        "theta_length": 0.2922163570654672,
+        "theta_quality": 1.7119386793263915
+      },
+      {
+        "step": 60,
+        "loss": 0.6753684968088581,
+        "reward_margin": 0.03593449658237356,
+        "reward_accuracy": 1.0,
+        "probe_accuracy": 0.8504385236298609,
+        "probe_hack_rate": 0.4891315291753019,
+        "theta_length": 0.314069222418825,
+        "theta_quality": 1.738044605117279
+      },
+      {
+        "step": 80,
+        "loss": 0.6697016456310004,
+        "reward_margin": 0.04755137531640535,
+        "reward_accuracy": 1.0,
+        "probe_accuracy": 0.853701346734368,
+        "probe_hack_rate": 0.5121954008411566,
+        "theta_length": 0.33578756833810186,
+        "theta_quality": 1.763931318850807
+      },
+      {
+        "step": 100,
+        "loss": 0.6641129880622794,
+        "reward_margin": 0.059087815718317616,
+        "reward_accuracy": 1.0,
+        "probe_accuracy": 0.8568782884846797,
+        "probe_hack_rate": 0.5347935922348175,
+        "theta_length": 0.35737238062822124,
+        "theta_quality": 1.789600490341603
+      },
+      {
+        "step": 120,
+        "loss": 0.6586013959830039,
+        "reward_margin": 0.07054442265813371,
+        "reward_accuracy": 1.0,
+        "probe_accuracy": 0.8599715639997039,
+        "probe_hack_rate": 0.5568559854032172,
+        "theta_length": 0.3788246514098096,
+        "theta_quality": 1.8150538073120392
+      },
+      {
+        "step": 140,
+        "loss": 0.6531657493158716,
+        "reward_margin": 0.08192180540708806,
+        "reward_accuracy": 1.0,
+        "probe_accuracy": 0.8629833532460126,
+        "probe_hack_rate": 0.5783245924680889,
+        "theta_length": 0.40014537844540465,
+        "theta_quality": 1.8402929738956566
+      },
+      {
+        "step": 160,
+        "loss": 0.6478049364741449,
+        "reward_margin": 0.09322057719103853,
+        "reward_accuracy": 1.0,
+        "probe_accuracy": 0.8659157993967017,
+        "probe_hack_rate": 0.5991523583302737,
+        "theta_length": 0.42133556448343396,
+        "theta_quality": 1.865319709176368
+      },
+      {
+        "step": 180,
+        "loss": 0.6425178547817038,
+        "reward_margin": 0.10444135475563478,
+        "reward_accuracy": 1.0,
+        "probe_accuracy": 0.8687710074317334,
+        "probe_hack_rate": 0.6193021372257653,
+        "theta_length": 0.4423962166202802,
+        "theta_quality": 1.890135745764469
+      },
+      {
+        "step": 200,
+        "loss": 0.637303410865561,
+        "reward_margin": 0.11558475794346514,
+        "reward_accuracy": 1.0,
+        "probe_accuracy": 0.8715510429623387,
+        "probe_hack_rate": 0.6387457884270057,
+        "theta_length": 0.463328345680696,
+        "theta_quality": 1.9147428284103303
+      },
+      {
+        "step": 220,
+        "loss": 0.6321605210214741,
+        "reward_margin": 0.12665140928336482,
+        "reward_accuracy": 1.0,
+        "probe_accuracy": 0.8742579312623772,
+        "probe_hack_rate": 0.657463341584058,
+        "theta_length": 0.4841329656167696,
+        "theta_quality": 1.939142712656502
+      },
+      {
+        "step": 240,
+        "loss": 0.627088111553319,
+        "reward_margin": 0.13764193359202737,
+        "reward_accuracy": 1.0,
+        "probe_accuracy": 0.8768936564907087,
+        "probe_hack_rate": 0.6754421991290783,
+        "theta_length": 0.5048110929255868,
+        "theta_quality": 1.963337163528825
+      },
+      {
+        "step": 260,
+        "loss": 0.6220851190869229,
+        "reward_margin": 0.14855695758802315,
+        "reward_accuracy": 1.0,
+        "probe_accuracy": 0.8794601610891711,
+        "probe_hack_rate": 0.6926763601856654,
+        "theta_length": 0.5253637460856841,
+        "theta_quality": 1.9873279542670108
+      },
+      {
+        "step": 280,
+        "loss": 0.617150490859081,
+        "reward_margin": 0.15939710951829278,
+        "reward_accuracy": 1.0,
+        "probe_accuracy": 0.881959345341543,
+        "probe_hack_rate": 0.7091656629358527,
+        "theta_length": 0.5457919450123362,
+        "theta_quality": 2.011116865095023
+      },
+      {
+        "step": 299,
+        "loss": 0.6125249673285919,
+        "reward_margin": 0.16962647686945775,
+        "reward_accuracy": 1.0,
+        "probe_accuracy": 0.8842729075322496,
+        "probe_hack_rate": 0.724145025377721,
+        "theta_length": 0.5650843880343491,
+        "theta_quality": 2.0335309657873473
+      }
+    ],
+    "length_reversed": [
+      {
+        "step": 0,
+        "loss": 0.6929195264790363,
+        "reward_margin": 0.0004553600000000004,
+        "reward_accuracy": 1.0,
+        "probe_accuracy": 0.8404700014588958,
+        "probe_hack_rate": 0.4150089137355483,
+        "theta_length": 0.24611331930945848,
+        "theta_quality": 1.661729277739658
+      },
+      {
+        "step": 20,
+        "loss": 0.6883881492189172,
+        "reward_margin": 0.00954081940447188,
+        "reward_accuracy": 1.0,
+        "probe_accuracy": 0.8508823531113595,
+        "probe_hack_rate": 0.3786065669114879,
+        "theta_length": 0.2285553338124116,
+        "theta_quality": 1.7415383027262346
+      },
+      {
+        "step": 40,
+        "loss": 0.6838978563774105,
+        "reward_margin": 0.018584997656838482,
+        "reward_accuracy": 1.0,
+        "probe_accuracy": 0.8606842416891285,
+        "probe_hack_rate": 0.3436854671734514,
+        "theta_length": 0.21107712566483033,
+        "theta_quality": 1.8209847033970585
+      },
+      {
+        "step": 60,
+        "loss": 0.6794482729027266,
+        "reward_margin": 0.027588084887549793,
+        "reward_accuracy": 1.0,
+        "probe_accuracy": 0.8698994650156677,
+        "probe_hack_rate": 0.31052371691193154,
+        "theta_length": 0.19367832743260538,
+        "theta_quality": 1.900070149907172
+      },
+      {
+        "step": 80,
+        "loss": 0.675039025570214,
+        "reward_margin": 0.036550271986177614,
+        "reward_accuracy": 1.0,
+        "probe_accuracy": 0.8785527905293844,
+        "probe_hack_rate": 0.279331708846569,
+        "theta_length": 0.17635857021459653,
+        "theta_quality": 1.9787963190799391
+      },
+      {
+        "step": 100,
+        "loss": 0.6706697430318029,
+        "reward_margin": 0.04547175055261719,
+        "reward_accuracy": 1.0,
+        "probe_accuracy": 0.8866695918464883,
+        "probe_hack_rate": 0.25025204679622187,
+        "theta_length": 0.15911748373693746,
+        "theta_quality": 2.0571648939783893
+      },
+      {
+        "step": 120,
+        "loss": 0.6663400558633723,
+        "reward_margin": 0.05435271284914096,
+        "reward_accuracy": 1.0,
+        "probe_accuracy": 0.8942755306646181,
+        "probe_hack_rate": 0.22336337797628847,
+        "theta_length": 0.1419546964456934,
+        "theta_quality": 2.1351775634840444
+      },
+      {
+        "step": 140,
+        "loss": 0.6620495966100762,
+        "reward_margin": 0.06319335175330772,
+        "reward_accuracy": 1.0,
+        "probe_accuracy": 0.9013962824567191,
+        "probe_hack_rate": 0.19868710651883986,
+        "theta_length": 0.12486983559786573,
+        "theta_quality": 2.2128360218832603
+      },
+      {
+        "step": 160,
+        "loss": 0.6577979998296655,
+        "reward_margin": 0.07199386071172922,
+        "reward_accuracy": 1.0,
+        "probe_accuracy": 0.9080573035941594,
+        "probe_hack_rate": 0.17619590009999364,
+        "theta_length": 0.10786252735074044,
+        "theta_quality": 2.290141968461102
+      },
+      {
+        "step": 180,
+        "loss": 0.6535849021338369,
+        "reward_margin": 0.0807544336946951,
+        "reward_accuracy": 1.0,
+        "probe_accuracy": 0.914283636977374,
+        "probe_hack_rate": 0.15582299229723046,
+        "theta_length": 0.09093239684957649,
+        "theta_quality": 2.367097107102756
+      },
+      {
+        "step": 200,
+        "loss": 0.6494099422276535,
+        "reward_margin": 0.08947526515165748,
+        "reward_accuracy": 1.0,
+        "probe_accuracy": 0.9200997529040609,
+        "probe_hack_rate": 0.13747146617693923,
+        "theta_length": 0.07407906831363371,
+        "theta_quality": 2.4437031459024956
+      },
+      {
+        "step": 220,
+        "loss": 0.6452727609470628,
+        "reward_margin": 0.09815654996757472,
+        "reward_accuracy": 1.0,
+        "probe_accuracy": 0.9255294217308853,
+        "probe_hack_rate": 0.12102292527152088,
+        "theta_length": 0.057302165120539934,
+        "theta_quality": 2.5199617967801946
+      },
+      {
+        "step": 240,
+        "loss": 0.6411730012945592,
+        "reward_margin": 0.1067984834201137,
+        "reward_accuracy": 1.0,
+        "probe_accuracy": 0.930595614849796,
+        "probe_hack_rate": 0.10634517447168315,
+        "theta_length": 0.04060130988899939,
+        "theta_quality": 2.595874775105379
+      },
+      {
+        "step": 260,
+        "loss": 0.6371103084730219,
+        "reward_margin": 0.11540126113770936,
+        "reward_accuracy": 1.0,
+        "probe_accuracy": 0.9353204305711489,
+        "probe_hack_rate": 0.09329871920508734,
+        "theta_length": 0.023976124559844086,
+        "theta_quality": 2.671443799328812
+      },
+      {
+        "step": 280,
+        "loss": 0.6330843299177682,
+        "reward_margin": 0.1239650790584792,
+        "reward_accuracy": 1.0,
+        "probe_accuracy": 0.9397250416554928,
+        "probe_hack_rate": 0.08174203486350162,
+        "theta_length": 0.007426230475433109,
+        "theta_quality": 2.7466705906215902
+      },
+      {
+        "step": 299,
+        "loss": 0.6292933377940164,
+        "reward_margin": 0.13206479827699316,
+        "reward_accuracy": 1.0,
+        "probe_accuracy": 0.9436312543081778,
+        "probe_hack_rate": 0.07201600839865274,
+        "theta_length": -0.00822677574446369,
+        "theta_quality": 2.8178206188938493
+      }
+    ]
+  },
+  "beta_sweep": {
+    "0.05": {
+      "margin": 0.029776867860273108,
+      "margin_over_beta": 0.5955373572054621,
+      "kl": 0.017921081310736952,
+      "probe_accuracy": 0.9049319360976013
+    },
+    "0.1": {
+      "margin": 0.11648420816167657,
+      "margin_over_beta": 1.1648420816167655,
+      "kl": 0.05131364267465015,
+      "probe_accuracy": 0.9438834204839149
+    },
+    "0.3": {
+      "margin": 0.8416449665901854,
+      "margin_over_beta": 2.8054832219672847,
+      "kl": 0.13100827871897758,
+      "probe_accuracy": 0.9886060397706053
+    },
+    "0.5": {
+      "margin": 1.6746448105644758,
+      "margin_over_beta": 3.3492896211289516,
+      "kl": 0.14550412489799835,
+      "probe_accuracy": 0.9933536499143553
+    }
+  }
+}
