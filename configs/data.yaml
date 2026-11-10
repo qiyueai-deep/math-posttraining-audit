@@ -1,0 +1,7 @@
+# 数据生成与切分配置。所有超参集中在这里, 运行时写入 data/manifest.json。
+seed: 20251109
+n_per_family: 36
+n_extra_variants: 8
+n_train_families: 9
+# 12 个题型族中前 9 个参与训练, 后 3 个只在 test_unseen_family 出现。
+# 每个训练族额外生成 ood_param / paraphrase / counterfactual 三类泛化样本。

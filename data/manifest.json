@@ -1,0 +1,79 @@
+{
+  "seed": 20251109,
+  "generator": "src/core/data_gen.py",
+  "split_rule": "group by (family, parameter tuple); 3 unseen families held out",
+  "subset_definition": {
+    "train_id": "训练族, 分布内参数",
+    "valid_id": "训练族, 分布内参数, 仅用于早停与选参",
+    "test_id": "训练族, 分布内参数, 独立留出",
+    "test_ood_param": "训练族, 参数超出训练范围",
+    "test_paraphrase": "训练族, 同义改写题面",
+    "test_counterfactual": "训练族, 改动条件且答案随之改变",
+    "test_unseen_family": "训练阶段完全未出现的题型族"
+  },
+  "n_rows": 600,
+  "n_families": 12,
+  "leakage": {
+    "ok": true,
+    "n_rows": 600,
+    "n_unique_signatures": 600,
+    "n_unique_questions": 600,
+    "by_split": {
+      "train": 252,
+      "valid": 45,
+      "test": 303
+    },
+    "by_subset": {
+      "train_id": 252,
+      "valid_id": 45,
+      "test_id": 27,
+      "test_ood_param": 72,
+      "test_paraphrase": 72,
+      "test_counterfactual": 24,
+      "test_unseen_family": 108
+    },
+    "train_families": [
+      "arithmetic_seq",
+      "combination",
+      "definite_integral",
+      "eigen_diagonal",
+      "fraction_sum",
+      "geometric_sum",
+      "linear_equation",
+      "quadratic_min",
+      "weighted_expectation"
+    ],
+    "unseen_families": [
+      "derivative_at",
+      "hypergeometric",
+      "lcm_product"
+    ],
+    "checks": {
+      "duplicate_parameter_signatures": 0,
+      "duplicate_canonical_questions": 0,
+      "cross_split_parameter_overlap": 0,
+      "cross_split_pairwise": {
+        "train_valid": 0,
+        "test_train": 0,
+        "test_valid": 0
+      },
+      "unseen_family_rows_outside_test": 0,
+      "family_in_both_train_and_unseen": [],
+      "empty_splits": []
+    }
+  },
+  "files": {
+    "train.jsonl": {
+      "sha256": "f7ca42fa12714ce6344da0f31a888e0eb56872fb671a452f9bedf17a20a4ff69",
+      "rows": 252
+    },
+    "valid.jsonl": {
+      "sha256": "0d588524abad1864037ae3992786c520e117d0a772b71407d9f49bf5be635554",
+      "rows": 45
+    },
+    "test.jsonl": {
+      "sha256": "76ccbfdb8d2a0a4abe6f3132faebe6011cc54fc111c43ed40aaed1c948228c3e",
+      "rows": 303
+    }
+  }
+}

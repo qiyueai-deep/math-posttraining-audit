@@ -1,0 +1,13 @@
+# 研究阶段、算法实验台与三轮检查零第三方依赖, 只用 Python 3.10+ 标准库。
+# 配置读写由 src/core/config.py 自己处理, 连 PyYAML 都不需要,
+# 因此在 PyCharm 里随便选一个解释器就能右键跑通 run_pycharm.py。
+#
+# 下面这些只用于模型阶段(src/model), 需要 GPU 环境。
+# 本机未安装时, `python -m src.run_all --stage model` 会明确报错并给出指引,
+# 不会静默跳过, 更不会写入伪造指标。
+torch>=2.2
+transformers>=4.45
+peft>=0.13
+trl>=0.12
+datasets>=2.19
+accelerate>=0.30

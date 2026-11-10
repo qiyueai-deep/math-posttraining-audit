@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+runs/
+reports/predictions_*.jsonl
+reports/_eval_*.jsonl
+.pytest_cache/
+
+# Model weights / adapters (regeneratable via src.run_all --stage model)
+*.pt
+*.safetensors
+.python-deps/
