@@ -1,0 +1,44 @@
+{
+  "note": "CPU pilot on real Qwen3-0.6B weights; reduced protocol (80 new tokens, 10 eval items, LoRA r=4); full 256-token protocol stays pending_model_run; these numbers only prove the pipeline executes, not model quality",
+  "base_model": "D:/models/Qwen3-0.6B",
+  "torch_version": "2.15.0+cpu",
+  "cuda_available": false,
+  "threads": 8,
+  "seed": 20251109,
+  "config": {
+    "base_model": "D:/models/Qwen3-0.6B",
+    "seed": 20251109,
+    "beta": 0.1,
+    "lora_r": 4,
+    "lora_alpha": 8,
+    "n_train_items": 16,
+    "n_sft_steps": 20,
+    "sft_lr": 0.0002,
+    "n_pairs_per_group": 6,
+    "n_dpo_steps": 10,
+    "dpo_lr": 1e-05,
+    "n_eval_per_subset": 1,
+    "max_new_tokens": 96,
+    "n_kl_prompts": 2,
+    "n_kl_samples": 2,
+    "kl_max_new_tokens": 24,
+    "max_seq_length": 256
+  },
+  "n_eval_items": 5,
+  "eval_subsets": [
+    "test_counterfactual",
+    "test_id",
+    "test_ood_param",
+    "test_paraphrase",
+    "test_unseen_family"
+  ],
+  "n_pilot_records": 51,
+  "elapsed_seconds": 477.63,
+  "adapters": {
+    "dpo_deconfounded": "4c721baf4f7e075d",
+    "dpo_length_reversed": "28d74485e099048e",
+    "dpo_shortcut": "ad46c2d06e13355c",
+    "sft": "b017ddc91895afdf"
+  },
+  "formal_protocol_still_pending": true
+}

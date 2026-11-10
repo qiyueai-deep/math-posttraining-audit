@@ -1,0 +1,22 @@
+# Qwen3-0.6B 权重层的 CPU pilot。
+# 这不是正式评测协议，正式协议仍是 eval.yaml 里的 256 token 与完整测试集，
+# 在本机 CPU 上跑不完，9 个 model_stage 指标保持 pending_model_run。
+# pilot 的目的只有一个：在真实权重上把 SFT、显式 ref 的 DPO、masked loss、
+# 严格三态验证器与生成评测整条链路真实执行一遍，并留下可追溯的数字。
+base_model: "D:/models/Qwen3-0.6B"
+seed: 20251109
+beta: 0.1
+lora_r: 4
+lora_alpha: 8
+n_train_items: 16
+n_sft_steps: 20
+sft_lr: 0.0002
+n_pairs_per_group: 6
+n_dpo_steps: 10
+dpo_lr: 0.00001
+n_eval_per_subset: 1
+max_new_tokens: 96
+n_kl_prompts: 2
+n_kl_samples: 2
+kl_max_new_tokens: 24
+max_seq_length: 256
